@@ -1,0 +1,105 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  max-height: 5rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+li {
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+li:hover {
+  color: #777;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  max-width: 25%;
+  margin: 25px;
+  box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: white;
+}
+
+.card img {
+  max-height: 500px;
+  margin: 10px;
+  border: none;
+  border-radius: 12px;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.search-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #0056B3;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
